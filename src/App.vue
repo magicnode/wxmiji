@@ -33,6 +33,7 @@ html,body{
 
 body {
   background-color: #fbf9fe;
+  overflow-x: hidden;
 }
 
 @media screen and (min-width:321px) and (max-width:375px){html{font-size:10px}}

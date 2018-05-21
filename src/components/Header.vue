@@ -31,13 +31,18 @@ export default {
   },
   created () {
     const path = this.$route.path
-    if (path === '/' || window.history.length === 1) {
+    if (path === '/') {
       this.isIndex = true
     }
   },
   methods: {
     goBack () {
-      this.$router.go(-1)
+      const path = this.$route.path
+      if (path !== '/' && window.history.length === 1) {
+        this.$router.push({path: '/'})
+      } else {
+        this.$router.go(-1)
+      }
     },
     goIndex () {
       const path = this.$route.path

@@ -12,7 +12,6 @@
   </mh-container>
 </template>
 <script>
-import { mapState } from 'vuex'
 
 export default {
   name: 'index',
@@ -22,32 +21,37 @@ export default {
   data () {
     return {
       intro: [{
-        title: '包裹嫌多，没有足够的地方'
+        title: '我已经报名加盟妙寄了，什么时候能知道结果呢？'
       }, {
-        title: '嫌包裹量少不赚钱'
+        title: '妙寄的社区选址有规定在哪些省份或区域吗？'
       }, {
-        title: '加盟费高'
+        title: '一家妙寄所管辖的社区大小有怎样的要求呢？'
       }, {
-        title: '系统操作繁琐，不想使用系统可以'
+        title: '一家社区中既有智能柜，又有代收点，还可以开妙寄门店吗？'
       }, {
-        title: '要求送件，没有时间送'
+        title: '原来没有门店，可以申请加盟妙寄吗？'
       }, {
-        title: '系统不会使用，滞留件操作麻烦'
+        title: '广告及生活服务是指什么？'
       }, {
-        title: '罚款责任要承担，规章制度太多 '
+        title: '冷链末端体系是什么呢？'
       }, {
-        title: '没有接触过，不感兴趣'
+        title: '妙寄的主要收益来源是快递吗？'
       }, {
-        title: '我们没有优势还要输入手机号，还要收费'
+        title: '我要加盟妙寄的话，每个月的利润是怎样的情况呢?'
       }, {
-        title: '如果我只做增值业务和寄件可以不'
+        title: '妙寄的所有设备需要全部一次性购买吗?'
+      }, {
+        title: '加盟妙寄除了加盟费每月还要缴纳其他费用吗？'
+      }, {
+        title: '门店遇到投诉的情况该怎么处理呢？'
+      }, {
+        title: '装修是公司统一装修还是自己装修呢？'
       }]
     }
   },
   methods: {
   },
   computed: {
-    ...mapState(['title'])
   }
 }
 </script>
