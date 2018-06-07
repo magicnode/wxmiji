@@ -52,6 +52,14 @@ export default new Router({
     name: 'ServiceChapter',
     component: require('@/views/ServiceChapter')
   }, {
+    path: '/joinprocess',
+    name: 'JoinProcess',
+    component: require('@/views/JoinProcess')
+  }, {
+    path: '/joinprocess/chapter',
+    name: 'JoinProcessChapter',
+    component: require('@/views/JoinProcessChapter')
+  }, {
     path: '/pic',
     name: 'Pic',
     component: require('@/views/Pic')

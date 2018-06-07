@@ -18,43 +18,39 @@ export default {
       intro: [{
         title: '下载、安装、升级'
       }, {
-        title: '注册登录'
+        title: '门店基本设置'
       }, {
-        title: '站点管理 ("我")'
+        title: '门店操作设置、管理'
       }, {
-        title: '集合设置'
+        title: '钱包功能'
       }, {
-        title: '扫描操作'
+        title: '分配子账号'
       }, {
-        title: '派件清单'
+        title: '分配业务员号'
       }, {
-        title: '补充操作'
+        title: '对接快递公司'
       }, {
-        title: '通讯清单'
+        title: '寄件品牌设置'
       }, {
-        title: '云通知'
+        title: '点货操作'
       }, {
-        title: '云电话'
+        title: '入库操作'
       }, {
-        title: '盘库清单'
+        title: '问题件操作'
       }, {
-        title: '寄件付款'
+        title: '签收操作'
       }, {
-        title: '搜索查询'
+        title: '揽收操作'
       }, {
-        title: '统计报表'
+        title: '遗留件操作'
       }, {
-        title: '社区 — 服务中心、锦囊、福利社、聚宝盆'
+        title: '查询功能'
       }, {
-        title: '钱包'
+        title: '录音电话'
       }, {
-        title: '首次登陆操作流程'
+        title: '收款到账提醒'
       }, {
-        title: '日常操作流程'
-      }, {
-        title: '外接扫描头'
-      }, {
-        title: '一号多账户登录'
+        title: '妙寄微信用户端'
       }]
     }
   },

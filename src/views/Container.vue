@@ -12,6 +12,7 @@
            <cell title="门店指南" value="" is-link link="/store"></cell>
            <cell title="APP操作" value="" is-link link="/app/index"></cell>
            <cell title="在线客服" value="" is-link link="/service"></cell>
+           <cell title="加盟指南" value="" is-link link="/joinprocess"></cell>
          </group>
       </div>
     </div>

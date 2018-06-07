@@ -6,8 +6,11 @@
          <group class="index-cell">
            <cell v-for="(item, index) in intro" :title="item.title" :link="'/service/chapter' + '?num=' + index + '&title=' + item.title"  :key="item.title" is-link></cell>
          </group>
-         <!-- <p class="index-service">还未解惑? 点击<strong>在线客服</strong>与客服进行沟通</p> -->
-      </div>      
+         <p class="index-service">还未解惑? 长按识别下方<strong>二维码</strong>与客服进行沟通</p>
+         <div class="qr-code">
+           <img src="../assets/images/service_qrcode.png" alt="">
+         </div>
+      </div>
     </div>
   </mh-container>
 </template>
@@ -99,6 +102,14 @@ export default {
       color: #999;
       text-align: left;
       font-size: 1.4rem;
+    }
+  }
+
+  .qr-code {
+    text-align: text-center;
+    padding-bottom: 2rem;
+    img {
+      width: 16rem;
     }
   }
 }

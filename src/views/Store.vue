@@ -9,9 +9,14 @@
          <p class="index-logo">MIJI</p>
          <p class="index-intro">门店指南</p>
          <group class="index-cell">
-           <cell v-for="(item, index) in intro" :title="item.title" :link="'/store/chapter' + '?num=' + index + '&title=' + item.title"  :key="item.title" is-link></cell>
+           <div v-for="(item, index) in intro" :key="index">
+             <cell
+               :title="item.title" 
+               is-link
+               :link="'/store/chapter' + '?num=' + index + '&title=' + item.title"></cell>
+           </div>
          </group>
-      </div>      
+      </div>
     </div>
   </mh-container>
 </template>
@@ -26,23 +31,68 @@ export default {
   data () {
     return {
       intro: [{
-        title: '交接'
-      }, {
-        title: '上架'
-      }, {
         title: '派件'
       }, {
-        title: '签收'
+        title: '寄件'
       }, {
-        title: '盘库'
+        title: '投诉和问题件处理'
       }, {
-        title: '问题件处理'
+        title: '门店安全及注意事项'
+      }],
+      intro2: [{
+        title: '派件',
+        content: [{
+          title: '到店',
+          num: 0
+        }, {
+          title: '到件',
+          num: 1
+        }, {
+          title: '分拣',
+          num: 2
+        }, {
+          title: '上架',
+          num: 3
+        }, {
+          title: '分派',
+          num: 4
+        }, {
+          title: '代收、到付处理',
+          num: 5
+        }, {
+          title: '签收',
+          num: 6
+        }, {
+          title: '规范服务话术',
+          num: 7
+        }]
       }, {
-        title: '电话联系'
+        title: '寄件',
+        num: 8
       }, {
-        title: '特殊要求'
+        title: '投诉和问题件处理',
+        content: [{
+          title: '圆通',
+          num: 9
+        }, {
+          title: '中通',
+          num: 10
+        }, {
+          title: '百世',
+          num: 11
+        }, {
+          title: '韵达',
+          num: 12
+        }, {
+          title: '顺丰、京东',
+          num: 13
+        }, {
+          title: '注意事项',
+          num: 14
+        }]
       }, {
-        title: '寄件细节'
+        title: '门店安全及注意事项',
+        num: 15
       }]
     }
   },
@@ -107,6 +157,9 @@ export default {
             color: #999;
             text-align: left;
             font-size: 1.4rem;
+          }
+          .cell-iitem {
+            padding-right: 1.5rem;
           }
         }
       }
