@@ -8,7 +8,7 @@
          </group>
          <p class="index-service">还未解惑? 长按识别下方<strong>二维码</strong>与客服进行沟通</p>
          <div class="qr-code">
-           <img src="../assets/images/service_qrcode.png" alt="">
+           <img src="../assets/images/service_qrcode1.jpg" alt="">
          </div>
       </div>
     </div>
